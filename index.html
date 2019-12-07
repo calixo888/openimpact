@@ -3,8 +3,102 @@
   <head>
     <meta charset="utf-8">
     <title>Open Impact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Open Impact</h1>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container">
+            <button class="btn nav-brand" style="color: white;" onclick="document.getElementById('home').scrollIntoView({behavior: 'smooth'});">Open Impact</button>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-target">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-target">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <button class="btn btn-link nav-link" onclick="document.getElementById('home').scrollIntoView({behavior: 'smooth'});">Home</button>
+                  </li>
+                  <li class="nav-item">
+                      <button class="btn btn-link nav-link" onclick="document.getElementById('what').scrollIntoView({behavior: 'smooth'});">What is Open Impact?</button>
+                  </li>
+                  <li class="nav-item">
+                      <button class="btn btn-link nav-link" onclick="document.getElementById('why').scrollIntoView({behavior: 'smooth'});">Why should you attend?</button>
+                  </li>
+                  <li class="nav-item">
+                      <button class="btn btn-link nav-link" onclick="document.getElementById('speakers').scrollIntoView({behavior: 'smooth'});">Speakers</button>
+                  </li>
+                  <li class="nav-item">
+                      <button class="btn btn-link nav-link" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'});">Contact Us</button>
+                  </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="home" id="home">
+      <div class="center-container">
+        <h1 class="main-header">Open Impact</h1>
+        <h3>Impacting the world through collaboration</h3>
+        <a href="#" class="form-submit mt-3">Register</a>
+      </div>
+    </section>
+
+    <section class="what" id="what">
+      <h1 class="header">What is Open Impact?</h1>
+      <div class="duo-grid">
+        <div class="left">
+          <p>
+            Open Impact is an event anyone can attend, whether you know how to code or not. We have invited speakers and organizations not only to speak about open sourcing and its benefits, but how they collaborate with their team to come up with the best possible product.
+          </p>
+        </div>
+        <div class="right">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYZOAiGfeH3NfsDPJQ9YgLkeMqQcHMBBiV337aQZouqPonWkY9&s" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="why">
+      <h1 class="header">Why attend Open Impact?</h1>
+      <div class="duo-grid">
+        <div class="left">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_oy88m1akgfAMgW3FVbmjQcKlxG8kyC6MSKqvQcnYbSfWE9kPTA&s" alt="">
+        </div>
+        <div class="right">
+          <p>
+            Open source software and products allow amazing developers to create amazing things, while at the same time involving the community. Attending Open Impact will not only open your eyes to how many world-changing products are open source, but how you can work with your peers or teammates for a better collaboration.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="speakers" id="speakers">
+      <h1 class="header">Speakers</h1>
+      <div class="speakers-grid">
+        <div class="speaker">
+          <h3 class="speaker-title">YCM Alameda</h3>
+          <p class="speaker-description">
+            YCM Alameda is a nonprofit organization.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us" id="contact-us">
+      <h1 class="header">Contact Us</h1>
+      <form class="contact-form" action="https://formspree.io/calix.huang1%40gmail.com" method="post">
+        <input class="form-input" type="text" name="Name" placeholder="Name">
+        <input class="form-input" type="email" name="Email" placeholder="Email">
+        <textarea class="form-input" name="Message" rows="6" placeholder="Message"></textarea>
+        <input class="form-submit" type="submit" value="Contact Us">
+      </form>
+    </section>
   </body>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
 </html>
