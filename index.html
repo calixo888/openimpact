@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Open Impact</title>
+    <link rel="icon" href="openimpact.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -10,7 +11,9 @@
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
         <div class="container">
-            <button class="btn nav-brand" style="color: white;" onclick="document.getElementById('home').scrollIntoView({behavior: 'smooth'});">Open Impact</button>
+            <button class="btn nav-brand" style="color: white;" onclick="document.getElementById('home').scrollIntoView({behavior: 'smooth'});">
+              <img class="logo" src="openimpact.png" alt="">
+            </button>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-target">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,55 +46,57 @@
       </div>
     </section>
 
-    <section class="what" id="what">
-      <h1 class="header">What is Open Impact?</h1>
-      <div class="duo-grid">
-        <div class="left">
-          <p>
-            Open Impact is an event anyone can attend, whether you know how to code or not. We have invited speakers and organizations not only to speak about open sourcing and its benefits, but how they collaborate with their team to come up with the best possible product.
-          </p>
+    <div class="graident-background">
+      <section class="what" id="what">
+        <h1 class="header">What is Open Impact?</h1>
+        <div class="duo-grid">
+          <div class="left">
+            <p>
+              Open Impact is an event anyone can attend, whether you know how to code or not. We have invited speakers and organizations not only to speak about open sourcing and its benefits, but how they collaborate with their team to come up with the best possible product.
+            </p>
+          </div>
+          <div class="right text-center">
+            <img class="big-logo" src="openimpact.png" alt="">
+          </div>
         </div>
-        <div class="right">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYZOAiGfeH3NfsDPJQ9YgLkeMqQcHMBBiV337aQZouqPonWkY9&s" alt="">
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="why" id="why">
-      <h1 class="header">Why attend Open Impact?</h1>
-      <div class="duo-grid">
-        <div class="left">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_oy88m1akgfAMgW3FVbmjQcKlxG8kyC6MSKqvQcnYbSfWE9kPTA&s" alt="">
+      <section class="why" id="why">
+        <h1 class="header">Why attend Open Impact?</h1>
+        <div class="duo-grid">
+          <div class="left">
+            <img src="https://cdn.pixabay.com/photo/2018/03/10/12/00/paper-3213924__480.jpg" alt="">
+          </div>
+          <div class="right">
+            <p>
+              Open source software and products allow amazing developers to create amazing things, while at the same time involving the community. Attending Open Impact will not only open your eyes to how many world-changing products are open source, but how you can work with your peers or teammates for a better collaboration.
+            </p>
+          </div>
         </div>
-        <div class="right">
-          <p>
-            Open source software and products allow amazing developers to create amazing things, while at the same time involving the community. Attending Open Impact will not only open your eyes to how many world-changing products are open source, but how you can work with your peers or teammates for a better collaboration.
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="speakers" id="speakers">
-      <h1 class="header">Speakers</h1>
-      <div class="speakers-grid">
-        <div class="speaker">
-          <h3 class="speaker-title">YCM Alameda</h3>
-          <p class="speaker-description">
-            YCM Alameda is a nonprofit organization.
-          </p>
+      <section class="speakers" id="speakers">
+        <h1 class="header">Speakers</h1>
+        <div class="speakers-grid">
+          <div class="speaker">
+            <h3 class="speaker-title">YCM Alameda</h3>
+            <p class="speaker-description">
+              YCM Alameda is a nonprofit organization.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="contact-us" id="contact-us">
-      <h1 class="header">Contact Us</h1>
-      <form class="contact-form" action="https://formspree.io/calix.huang1%40gmail.com" method="post">
-        <input class="form-input" type="text" name="Name" placeholder="Name">
-        <input class="form-input" type="email" name="Email" placeholder="Email">
-        <textarea class="form-input" name="Message" rows="6" placeholder="Message"></textarea>
-        <input class="form-submit" type="submit" value="Contact Us">
-      </form>
-    </section>
+      <section class="contact-us" id="contact-us">
+        <h1 class="header">Contact Us</h1>
+        <form class="contact-form" action="https://formspree.io/calix.huang1%40gmail.com" method="post">
+          <input class="form-input" type="text" name="Name" placeholder="Name">
+          <input class="form-input" type="email" name="Email" placeholder="Email">
+          <textarea class="form-input" name="Message" rows="6" placeholder="Message"></textarea>
+          <input class="form-submit" type="submit" value="Contact Us">
+        </form>
+      </section>
+    </div>
   </body>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

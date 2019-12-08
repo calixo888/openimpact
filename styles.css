@@ -6,12 +6,12 @@
   font-family: Montserrat;
 }
 
-body {
-  background-image: linear-gradient(to right bottom, rgb(100, 100, 100), rgb(40, 40, 40));
+.graident-background {
+  background-image: linear-gradient(to right bottom, rgb(81, 140, 173), rgb(43, 81, 112));
 }
 
 section {
-  padding: 50px;
+  padding: 100px 50px;
 }
 
 .header {
@@ -24,6 +24,9 @@ section {
 .home {
   position: relative;
   height: 100vh;
+
+  background-image: linear-gradient(to right bottom, rgba(81, 140, 173, 0.75), rgba(43, 81, 112, 0.75)), url("https://cdn.pixabay.com/photo/2016/02/19/11/19/office-1209640__480.jpg");
+  background-size: cover;
 }
 
 .center-container {
@@ -38,15 +41,23 @@ section {
   font-size: 75px;
 }
 
+.logo {
+  width: 100px;
+}
+
 /* INFO SECTIONS */
 .what, .why {
-  padding: 50px 100px;
+  padding: 100px;
 }
 .duo-grid {
   display: grid;
   grid-template-columns: repeat(2, 40%);
   grid-gap: 100px;
   /* margin: 0 auto; */
+}
+
+.big-logo {
+  width: 60%;
 }
 
 img {
