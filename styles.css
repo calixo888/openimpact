@@ -89,6 +89,10 @@ img {
   box-shadow: 0 5px 10px rgba(0,0,0,.3);
 }
 
+.speaker-title {
+  font-weight: 100%;
+}
+
 .speaker > * {
   color: black;
 }
