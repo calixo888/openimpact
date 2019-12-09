@@ -1,0 +1,37 @@
+@media (max-width: 1000px) {
+  .image-side {
+    display: none;
+  }
+
+  .duo-grid {
+    display: block;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .speakers-grid {
+    margin: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  section {
+    padding: 50px 25px 25px 25px;
+  }
+
+  .what, .why {
+    padding: 50px 50px 25px 50px;
+  }
+
+  .subheader {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 20px !important;
+  }
+}
